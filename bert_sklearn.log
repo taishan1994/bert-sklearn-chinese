@@ -1,0 +1,436 @@
+03/30/2022 11:09:30 - INFO - root -   Loading model:
+BertClassifier(bert_model='bert-base-chinese', epochs=10, eval_batch_size=32,
+               label_list=dict_values(['news_story', 'news_culture', 'news_entertainment', 'news_sports', 'news_finance', 'news_house', 'news_car', 'news_edu', 'news_tech', 'news_military', 'news_travel', 'news_world', 'news_stock', 'news_agriculture', 'news_game']),
+               max_seq_length=256)
+03/30/2022 11:09:30 - WARNING - bert_sklearn.model.pytorch_pretrained.tokenization -   The pre-trained model you are loading is an uncased model but you have set `do_lower_case` to False. We are setting `do_lower_case=True` for you but you may want to check this behavior.
+03/30/2022 11:09:31 - INFO - bert_sklearn.model.pytorch_pretrained.file_utils -   https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-vocab.txt not found in cache, downloading to /tmp/tmpjme8z4vd
+03/30/2022 11:09:33 - INFO - bert_sklearn.model.pytorch_pretrained.file_utils -   copying /tmp/tmpjme8z4vd to cache at /home/rhino/.cache/torch/pytorch_pretrained_bert/8a0c070123c1f794c42a29c6904beb7c1b8715741e235bee04aca2c7636fc83f.9b42061518a39ca00b8b52059fd2bede8daa613f8a8671500e518a8c29de8c00
+03/30/2022 11:09:33 - INFO - bert_sklearn.model.pytorch_pretrained.file_utils -   creating metadata file for /home/rhino/.cache/torch/pytorch_pretrained_bert/8a0c070123c1f794c42a29c6904beb7c1b8715741e235bee04aca2c7636fc83f.9b42061518a39ca00b8b52059fd2bede8daa613f8a8671500e518a8c29de8c00
+03/30/2022 11:09:33 - INFO - bert_sklearn.model.pytorch_pretrained.file_utils -   removing temp file /tmp/tmpjme8z4vd
+03/30/2022 11:09:33 - INFO - bert_sklearn.model.pytorch_pretrained.tokenization -   loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-vocab.txt from cache at /home/rhino/.cache/torch/pytorch_pretrained_bert/8a0c070123c1f794c42a29c6904beb7c1b8715741e235bee04aca2c7636fc83f.9b42061518a39ca00b8b52059fd2bede8daa613f8a8671500e518a8c29de8c00
+03/30/2022 11:09:34 - INFO - bert_sklearn.model.pytorch_pretrained.file_utils -   https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-pytorch_model.bin not found in cache, downloading to /tmp/tmp1tck3x8n
+03/30/2022 11:15:50 - INFO - root -   Loading model:
+BertClassifier(bert_model='model_hub/bert-base-chinese/', epochs=10,
+               eval_batch_size=32,
+               label_list=dict_values(['news_story', 'news_culture', 'news_entertainment', 'news_sports', 'news_finance', 'news_house', 'news_car', 'news_edu', 'news_tech', 'news_military', 'news_travel', 'news_world', 'news_stock', 'news_agriculture', 'news_game']),
+               max_seq_length=256)
+03/30/2022 11:15:50 - INFO - bert_sklearn.model.pytorch_pretrained.tokenization -   loading vocabulary file model_hub/bert-base-chinese/vocab.txt
+03/30/2022 11:15:50 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+03/30/2022 11:15:53 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Weights of BertPlusMLP not initialized from pretrained model: ['mlp.weight', 'mlp.bias']
+03/30/2022 11:15:53 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Weights from pretrained model not used in BertPlusMLP: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+03/30/2022 11:15:53 - INFO - root -   train data size: 48024, validation data size: 5336
+03/30/2022 11:15:58 - INFO - root -   Number of train optimization steps is : 15010
+03/30/2022 11:16:49 - INFO - root -   Loading model:
+BertClassifier(bert_model='model_hub/bert-base-chinese/', epochs=10,
+               eval_batch_size=32,
+               label_list=['news_story', 'news_culture', 'news_entertainment',
+                           'news_sports', 'news_finance', 'news_house',
+                           'news_car', 'news_edu', 'news_tech', 'news_military',
+                           'news_travel', 'news_world', 'news_stock',
+                           'news_agriculture', 'news_game'],
+               max_seq_length=256)
+03/30/2022 11:16:49 - INFO - bert_sklearn.model.pytorch_pretrained.tokenization -   loading vocabulary file model_hub/bert-base-chinese/vocab.txt
+03/30/2022 11:16:49 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+03/30/2022 11:16:51 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Weights of BertPlusMLP not initialized from pretrained model: ['mlp.weight', 'mlp.bias']
+03/30/2022 11:16:51 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Weights from pretrained model not used in BertPlusMLP: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+03/30/2022 11:16:51 - INFO - root -   train data size: 48024, validation data size: 5336
+03/30/2022 11:16:56 - INFO - root -   Number of train optimization steps is : 15010
+03/30/2022 11:17:21 - INFO - root -   Loading model:
+BertClassifier(bert_model='model_hub/bert-base-chinese/', epochs=10,
+               eval_batch_size=32,
+               label_list=['news_story', 'news_culture', 'news_entertainment',
+                           'news_sports', 'news_finance', 'news_house',
+                           'news_car', 'news_edu', 'news_tech', 'news_military',
+                           'news_travel', 'news_world', 'news_stock',
+                           'news_agriculture', 'news_game'],
+               max_seq_length=256, train_batch_size=16)
+03/30/2022 11:17:21 - INFO - bert_sklearn.model.pytorch_pretrained.tokenization -   loading vocabulary file model_hub/bert-base-chinese/vocab.txt
+03/30/2022 11:17:21 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+03/30/2022 11:17:24 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Weights of BertPlusMLP not initialized from pretrained model: ['mlp.weight', 'mlp.bias']
+03/30/2022 11:17:24 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Weights from pretrained model not used in BertPlusMLP: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+03/30/2022 11:17:24 - INFO - root -   train data size: 48024, validation data size: 5336
+03/30/2022 11:17:28 - INFO - root -   Number of train optimization steps is : 30020
+03/30/2022 11:18:07 - INFO - root -   Loading model:
+BertClassifier(bert_model='model_hub/bert-base-chinese/', eval_batch_size=32,
+               label_list=['news_story', 'news_culture', 'news_entertainment',
+                           'news_sports', 'news_finance', 'news_house',
+                           'news_car', 'news_edu', 'news_tech', 'news_military',
+                           'news_travel', 'news_world', 'news_stock',
+                           'news_agriculture', 'news_game'],
+               train_batch_size=16)
+03/30/2022 11:18:07 - INFO - bert_sklearn.model.pytorch_pretrained.tokenization -   loading vocabulary file model_hub/bert-base-chinese/vocab.txt
+03/30/2022 11:18:07 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+03/30/2022 11:18:09 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Weights of BertPlusMLP not initialized from pretrained model: ['mlp.weight', 'mlp.bias']
+03/30/2022 11:18:09 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Weights from pretrained model not used in BertPlusMLP: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+03/30/2022 11:18:09 - INFO - root -   train data size: 48024, validation data size: 5336
+03/30/2022 11:18:14 - INFO - root -   Number of train optimization steps is : 9006
+03/30/2022 11:22:40 - INFO - root -   Loading model:
+BertClassifier(bert_model='model_hub/bert-base-chinese/', eval_batch_size=32,
+               label_list=['news_story', 'news_culture', 'news_entertainment',
+                           'news_sports', 'news_finance', 'news_house',
+                           'news_car', 'news_edu', 'news_tech', 'news_military',
+                           'news_travel', 'news_world', 'news_stock',
+                           'news_agriculture', 'news_game'],
+               train_batch_size=16)
+03/30/2022 11:22:40 - INFO - bert_sklearn.model.pytorch_pretrained.tokenization -   loading vocabulary file model_hub/bert-base-chinese/vocab.txt
+03/30/2022 11:22:40 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+03/30/2022 11:22:43 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Weights of BertPlusMLP not initialized from pretrained model: ['mlp.weight', 'mlp.bias']
+03/30/2022 11:22:43 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Weights from pretrained model not used in BertPlusMLP: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+03/30/2022 11:22:43 - INFO - root -   train data size: 48024, validation data size: 5336
+03/30/2022 11:22:47 - INFO - root -   Number of train optimization steps is : 9006
+03/30/2022 11:36:10 - INFO - root -   Epoch 1, Train loss: 1.4426, Val loss: 1.2210, Val accy: 56.30%
+03/30/2022 11:49:35 - INFO - root -   Epoch 2, Train loss: 1.0357, Val loss: 1.2221, Val accy: 56.24%
+03/30/2022 12:03:04 - INFO - root -   Epoch 3, Train loss: 0.7802, Val loss: 1.2709, Val accy: 56.30%
+03/30/2022 12:03:05 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+03/30/2022 12:03:07 - INFO - root -   Loading model:
+BertClassifier(bert_config_json={'architectures': ['BertForMaskedLM'],
+                                 'attention_probs_dropout_prob': 0.1,
+                                 'directionality': 'bidi', 'hidden_act': 'gelu',
+                                 'hidden_dropout_prob': 0.1, 'hidden_size': 768,
+                                 'initializer_range': 0.02,
+                                 'intermediate_size': 3072,
+                                 'layer_norm_eps': 1e-12,
+                                 'max_position_embeddings': 512,
+                                 'model_type': 'bert',
+                                 'num_attention_heads': 12,
+                                 'num_hidde...
+                                       ('[unused26]', 26), ('[unused27]', 27),
+                                       ('[unused28]', 28), ('[unused29]', 29), ...]),
+               do_lower_case=False, eval_batch_size=32,
+               label_list=['news_story', 'news_culture', 'news_entertainment',
+                           'news_sports', 'news_finance', 'news_house',
+                           'news_car', 'news_edu', 'news_tech', 'news_military',
+                           'news_travel', 'news_world', 'news_stock',
+                           'news_agriculture', 'news_game'],
+               train_batch_size=16)
+03/30/2022 13:39:59 - INFO - root -   Loading model:
+BertTokenClassifier(bert_model='model_hub/bert-base-chinese/',
+                    eval_batch_size=32,
+                    label_list=['B-LOC', 'B-ORG', 'B-PER', 'I-LOC', 'I-ORG',
+                                'I-PER', 'O'],
+                    max_seq_length=102, train_batch_size=16)
+03/30/2022 13:39:59 - INFO - bert_sklearn.model.pytorch_pretrained.tokenization -   loading vocabulary file model_hub/bert-base-chinese/vocab.txt
+03/30/2022 13:39:59 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+03/30/2022 13:40:02 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Weights of BertPlusMLP not initialized from pretrained model: ['mlp.weight', 'mlp.bias']
+03/30/2022 13:40:02 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Weights from pretrained model not used in BertPlusMLP: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+03/30/2022 13:40:02 - INFO - root -   train data size: 45593, validation data size: 5065
+03/30/2022 13:40:06 - INFO - root -   Number of train optimization steps is : 8550
+03/30/2022 13:51:21 - INFO - root -   Epoch 1, Train loss: 0.0298, Val loss: 0.0077, Val accy: 99.40%, f1: 99.40
+03/30/2022 14:02:36 - INFO - root -   Epoch 2, Train loss: 0.0052, Val loss: 0.0071, Val accy: 99.49%, f1: 99.49
+03/30/2022 14:13:51 - INFO - root -   Epoch 3, Train loss: 0.0024, Val loss: 0.0073, Val accy: 99.52%, f1: 99.52
+03/30/2022 14:13:52 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+03/30/2022 14:13:54 - INFO - root -   Loading model:
+BertTokenClassifier(bert_config_json={'architectures': ['BertForMaskedLM'],
+                                      'attention_probs_dropout_prob': 0.1,
+                                      'directionality': 'bidi',
+                                      'hidden_act': 'gelu',
+                                      'hidden_dropout_prob': 0.1,
+                                      'hidden_size': 768,
+                                      'initializer_range': 0.02,
+                                      'intermediate_size': 3072,
+                                      'layer_norm_eps': 1e-12,
+                                      'max_position_embeddings': 512,
+                                      'model_type': 'bert',
+                                      'num_attention_heads': 12,
+                                      'num_...
+                                            ('[unused18]', 18),
+                                            ('[unused19]', 19),
+                                            ('[unused20]', 20),
+                                            ('[unused21]', 21),
+                                            ('[unused22]', 22),
+                                            ('[unused23]', 23),
+                                            ('[unused24]', 24),
+                                            ('[unused25]', 25),
+                                            ('[unused26]', 26),
+                                            ('[unused27]', 27),
+                                            ('[unused28]', 28),
+                                            ('[unused29]', 29), ...]),
+                    do_lower_case=False, eval_batch_size=32,
+                    label_list=['B-LOC', 'B-ORG', 'B-PER', 'I-LOC', 'I-ORG',
+                                'I-PER', 'O'],
+                    max_seq_length=102, train_batch_size=16)
+03/30/2022 14:23:44 - INFO - root -   Loading model:
+BertClassifier(bert_model='model_hub/bert-base-chinese/', eval_batch_size=32,
+               label_list=array(['-', 'contradiction', 'entailment', 'neutral'], dtype=object),
+               train_batch_size=16)
+03/30/2022 14:23:44 - INFO - bert_sklearn.model.pytorch_pretrained.tokenization -   loading vocabulary file model_hub/bert-base-chinese/vocab.txt
+03/30/2022 14:23:44 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+03/30/2022 14:23:46 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Weights of BertPlusMLP not initialized from pretrained model: ['mlp.weight', 'mlp.bias']
+03/30/2022 14:23:46 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Weights from pretrained model not used in BertPlusMLP: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+03/30/2022 14:23:46 - INFO - root -   train data size: 3517, validation data size: 390
+03/30/2022 14:23:51 - INFO - root -   Number of train optimization steps is : 660
+03/30/2022 14:24:50 - INFO - root -   Epoch 1, Train loss: 1.0940, Val loss: 0.8654, Val accy: 66.67%
+03/30/2022 14:25:51 - INFO - root -   Epoch 2, Train loss: 0.7324, Val loss: 0.7481, Val accy: 70.00%
+03/30/2022 14:26:54 - INFO - root -   Epoch 3, Train loss: 0.4537, Val loss: 0.8104, Val accy: 70.26%
+03/30/2022 14:26:55 - INFO - bert_sklearn.model.pytorch_pretrained.modeling -   Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+03/30/2022 14:26:57 - INFO - root -   Loading model:
+BertClassifier(bert_config_json={'architectures': ['BertForMaskedLM'],
+                                 'attention_probs_dropout_prob': 0.1,
+                                 'directionality': 'bidi', 'hidden_act': 'gelu',
+                                 'hidden_dropout_prob': 0.1, 'hidden_size': 768,
+                                 'initializer_range': 0.02,
+                                 'intermediate_size': 3072,
+                                 'layer_norm_eps': 1e-12,
+                                 'max_position_embeddings': 512,
+                                 'model_type': 'bert',
+                                 'num_attention_heads': 12,
+                                 'num_hidde...
+                                       ('[unused18]', 18), ('[unused19]', 19),
+                                       ('[unused20]', 20), ('[unused21]', 21),
+                                       ('[unused22]', 22), ('[unused23]', 23),
+                                       ('[unused24]', 24), ('[unused25]', 25),
+                                       ('[unused26]', 26), ('[unused27]', 27),
+                                       ('[unused28]', 28), ('[unused29]', 29), ...]),
+               do_lower_case=False, eval_batch_size=32,
+               label_list=array(['-', 'contradiction', 'entailment', 'neutral'], dtype=object),
+               train_batch_size=16)
